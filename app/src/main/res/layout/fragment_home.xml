@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/filter_layout">
+          <ImageView
+              android:layout_width="36dp"
+              android:layout_height="36dp"
+              android:contentDescription="@string/filter_logo"
+              android:paddingHorizontal="8dp"
+              android:paddingVertical="4dp"
+              android:id="@+id/all_notes"
+              android:layout_gravity="center"
+              android:background="@drawable/filter_bg"
+              android:src="@drawable/filter"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high"
+                android:textSize="16sp"
+                android:id="@+id/filter_high"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/red_dot"
+                android:layout_gravity="center"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="18dp"
+                android:background="@drawable/filter_bg"
+                android:layout_marginHorizontal="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medium"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/yellow_dot"
+                android:layout_gravity="center"
+                android:paddingVertical="4dp"
+                android:id="@+id/filter_medium"
+                android:paddingHorizontal="24dp"
+                android:background="@drawable/filter_bg"
+                android:layout_marginEnd="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/low"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/green_dot"
+                android:layout_gravity="center"
+                android:paddingVertical="4dp"
+                android:id="@+id/filter_low"
+                android:paddingHorizontal="24dp"
+                android:background="@drawable/filter_bg" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAllNotes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/filter_layout"
+            tools:listitem="@layout/item_note"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/fab"
+            android:src="@drawable/ic_add"
+            android:layout_margin="24dp"
+            android:backgroundTint="@color/primaryColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.EditNoteFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginVertical="24dp"
+            app:layout_constraintTop_toBottomOf="@id/subtitle_card_view"
+            android:id="@+id/dot_layout">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/red_dot"
+                android:contentDescription="@string/red_dot"
+                android:background="@drawable/red_dot"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/yellow_dot"
+                android:contentDescription="@string/yellow_dot"
+                android:layout_marginHorizontal="12dp"
+                android:background="@drawable/yellow_dot"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/green_dot"
+                android:contentDescription="@string/green_dot"
+                android:background="@drawable/green_dot"/>
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/fab"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="24dp"
+            android:id="@+id/update_note"
+            android:backgroundTint="@color/primaryColor"
+            android:src="@drawable/ic_check"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:id="@+id/title_card_view"
+            android:layout_marginHorizontal="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="no"
+                android:id="@+id/et_title"
+                android:background="@drawable/et_bg"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                android:hint="@string/title"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-medium"
+                android:inputType="text"
+                android:textColorHint="@color/white"/>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/subtitle_card_view"
+            android:layout_marginHorizontal="12dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@id/title_card_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="no"
+                android:background="@drawable/et_bg"
+                android:paddingHorizontal="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingVertical="12dp"
+                android:hint="@string/subtitle"
+                android:textSize="22sp"
+                android:id="@+id/edit_subtitle"
+                android:inputType="text"
+                android:textColorHint="@color/white"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/notes_card_view"
+            android:layout_marginHorizontal="12dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintTop_toBottomOf="@id/dot_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="no"
+                android:background="@drawable/et_bg"
+                android:paddingHorizontal="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingVertical="12dp"
+                android:hint="@string/notes"
+                android:textSize="22sp"
+                android:textAlignment="textStart"
+                android:maxLines="12"
+                android:gravity="top"
+                android:id="@+id/et_notes"
+                android:minHeight="400dp"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:textColorHint="@color/white"
+                tools:ignore="RtlCompat" />
+
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

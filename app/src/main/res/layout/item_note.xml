@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        android:padding="12dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#747474"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_note_title"
+                    android:text="@string/go_to_library"
+                    android:textSize="24sp"
+                    android:padding="12dp"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textColor="@color/white"/>
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:id="@+id/notesPriorty"
+                   android:layout_marginHorizontal="12dp"
+                   android:contentDescription="@string/note_view" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/i_have_to_go_to_the_library_to_learn_about_quantum_physics_i_have_to_know_more_about_the_quantum_world"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/tv_sub"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_marginHorizontal="12dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/_23_march_2021"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:id="@+id/notes_date"
+    android:layout_marginHorizontal="12dp"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

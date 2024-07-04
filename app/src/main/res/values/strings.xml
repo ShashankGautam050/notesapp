@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notesapp">NotesApp</string>
+    <string name="app_logo">app_logo</string>
+    <string name="remember_what_makes_your_life_better">Remember,What makes your Life Better</string>
+    <string name="shashank_gautam">Shashank Gautam</string>
+    <string name="fab">fab</string>
+    <string name="title">Title…</string>
+    <string name="subtitle">Subtitle…</string>
+    <string name="notes">Notes…</string>
+    <string name="red_dot">red_dot</string>
+    <string name="yellow_dot">yellow_dot\n</string>
+    <string name="green_dot">green_dot</string>
+    <string name="go_to_library">Go to Library</string>
+    <string name="note_view">note_view</string>
+    <string name="i_have_to_go_to_the_library_to_learn_about_quantum_physics_i_have_to_know_more_about_the_quantum_world">i have to go to the library to learn about quantum physics i have to know more about the quantum world</string>
+    <string name="_23_march_2021">23 March 2021</string>
+    <string name="you_are_deleting_the_note_if_you_want_to_continue_the_process_then_press_yes_else_press_no">You are Deleting the Note,If you want to continue the process then press yes else press no.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="filter_logo">filter_logo</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+</resources>

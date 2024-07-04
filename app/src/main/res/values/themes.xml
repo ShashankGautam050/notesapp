@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MovieApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/primaryColor</item>
+    </style>
+
+    <style name="ProgressBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+    </style>
+
+    <style name="Theme.MovieApp" parent="Base.Theme.MovieApp" />
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog" >
+        <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
+    </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="background">@drawable/delete_dialog_bg</item>
+    </style>
+    
+</resources>
